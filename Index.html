@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logoAlura" src="img/Logo.png" alt="Logo">
+    </header>
+    <main class="apresentacao">
+
+        <section class="campo_da_entrada">
+
+            <textarea class="campo__area_texto" cols="41" rows="4" placeholder="digite seu texto"></textarea>
+
+            <div class="campo__aviso">
+            <h6><img src="img/bi_exclamation.png"> letras minusculas e sem acento</h6>    
+            </div>
+
+            <div class="botoes">
+            <button class="campo__btn_encrypt" onclick="btn_encriptar()">Criptografar</button>
+            <button class="campo__btn_descrypt"onclick="btn_desencriptar()">Descriptografar</button>
+            </div>
+
+        </section>
+
+        <section class="campo_da_saida">
+        
+            <div class="campo">
+                <div class="campo__mensagem__informacao">
+                  <p class="mensagem_titulo"><strong>Nenhuma mensagem encontrada</strong></p>
+                  <p class="mensagem_descricao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                
+                <textarea class="campo__mensagem" cols="20" rows="10"></textarea>
+                <button class="campo__btn_copiar" onclick="btn_copiar()">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="rodape">
+        <p>@Criado por Mateus Moreira Rios</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
